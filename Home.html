@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="Home.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    
+  />
+  <link rel="stylesheet" href="Home-swipper.css">
+  <link rel="stylesheet" href="card.css">
+
+
+
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo" data-aos="fade-right" data-aos-duration="3000">
+                
+                <h1>Doctor</h1> 
+                <h1 class="care">Care</h1>
+            </div>
+            <ul class="nav-links" data-aos="fade-down" data-aos-duration="3000">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Appointments</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Doctors</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#" id="log" onclick="log()">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="swiper mySwiper" data-aos="fade-up" data-aos-duration="3000">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="https://img.freepik.com/free-photo/team-doctors-standing-row_107420-84772.jpg?t=st=1740326775~exp=1740330375~hmac=f81033e923bfa4175860b70a178a40d67657d4185708ddd0ec37d6a334a6c8a2&w=1380" alt=""></div>
+          <div class="swiper-slide"><img src="https://img.freepik.com/free-photo/medic-with-documents-clinic_23-2147763761.jpg?t=st=1740327309~exp=1740330909~hmac=653824783263f402e7590d413b70b2e5963f2cff5b55ef2484ec6de934ad4188&w=1380" alt=""></div>
+          <div class="swiper-slide"><img src="https://img.freepik.com/free-photo/group-successful-doctors-hospital_1139-315.jpg?t=st=1740327395~exp=1740330995~hmac=55cd2b34ad63f8aef6ad789b40084f0a08855866dd8b0135b57c690391f15c4b&w=1380" alt=""></div>
+          <div class="swiper-slide"><img src="https://media.istockphoto.com/id/1091778630/photo/the-simplest-things-can-be-a-breath-of-fresh-air.jpg?s=2048x2048&w=is&k=20&c=HNuOivL4PPBqeJyUiyFsrjFP88qokeWtkLVBdWzLQww=" alt=""></div>
+          <div class="swiper-slide"><img src="https://img.freepik.com/premium-psd/surgeon-surgical-gown-mask-working-operating-room-performs-procedure_282218-50966.jpg?semt=ais_hybrid" alt=""></div>
+          <div class="swiper-slide"><img src="https://static.vecteezy.com/system/resources/previews/006/831/703/non_2x/banner-background-of-professional-surgical-doctor-team-are-working-in-hospital-operation-room-medicine-surgeon-person-teamwork-concept-free-photo.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="https://img.freepik.com/free-photo/doctors-looking-x-ray-hallway_23-2147763767.jpg?t=st=1740327580~exp=1740331180~hmac=bc52e207a9a7763f57173c90087ee3118f67db3c68de56e85a6612ddacacb53e&w=1380" alt=""></div>
+          <div class="swiper-slide"><img src="https://img.freepik.com/free-photo/medic-measuring-pressure-patient_23-2147763769.jpg?t=st=1740327601~exp=1740331201~hmac=5e4660810696a5f8db8caaacd86b0b43de39eac8b2468508e36cacf94bd21663&w=1800" alt=""></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <div id="typed-output"></div>
+
+<!-- cards -->
+<section id="card-grid">
+
+      <div id="card" data-aos="fade-right" data-aos-duration="3000">
+        <div id="card-content">
+     
+          <div id="image-container">
+            <img src="https://media.istockphoto.com/id/1346124900/photo/confident-successful-mature-doctor-at-hospital.jpg?s=612x612&w=0&k=20&c=S93n5iTDVG3_kJ9euNNUKVl9pgXTOdVQcI_oDGG-QlE=" alt="Doctor" id="doctor-image">
+          </div>
+          
+        
+          <div id="booking-container" data-aos="fade-down" data-aos-duration="3000">
+            <h2 id="head">Book Your Appointment</h2>
+            <p>Select your preferred doctor and schedule your visit:</p>
+        </div>
+    </div>
+  </div>
+
+
+  <div id="card" data-aos="fade-left" data-aos-duration="3000">
+    <div id="card-content">
+ 
+      <div id="image-container">
+        <img src="https://img.freepik.com/free-photo/young-handsome-doctor-with-stethoscope-clinic_1303-19759.jpg?ga=GA1.1.362795349.1739713318&semt=ais_hybrid" alt="Doctor" id="doctor-image">
+      </div>
+      
+    
+      <div id="booking-container" data-aos="fade-up" data-aos-duration="3000">
+        <h2 id="head">Book Your Appointment</h2>
+        <p>Select your preferred doctor and schedule your visit:</p>
+    </div>
+</div>
+</div>
+
+</section>
+
+
+<section id="card-grid2">
+
+  <div id="card" data-aos="fade-right" data-aos-duration="3000">
+    <div id="card-content">
+ 
+      <div id="image-container">
+        <img src="https://img.freepik.com/free-photo/beautiful-female-doctor-white-coat-standing-arms-crossed-white-wall_114579-90450.jpg?ga=GA1.1.362795349.1739713318&semt=ais_hybrid" alt="Doctor" id="doctor-image">
+      </div>
+      
+    
+      <div id="booking-container" data-aos="fade-up" data-aos-duration="3000">
+        <h2 id="head">Book Your Appointment</h2>
+        <p>Select your preferred doctor and schedule your visit:</p>
+    </div>
+</div>
+</div>
+
+
+<div id="card">
+<div id="card-content" data-aos="fade-left" data-aos-duration="3000">
+
+  <div id="image-container">
+    <img src="https://img.freepik.com/free-photo/woman-doctor-with-white-coat-hospital_1157-36765.jpg?ga=GA1.1.362795349.1739713318&semt=ais_hybrid" alt="Doctor" id="doctor-image">
+  </div>
+  
+
+  <div id="booking-container" data-aos="fade-down" data-aos-duration="3000">
+    <h2 id="head">Book Your Appointment</h2>
+    <p>Select your preferred doctor and schedule your visit:</p>
+</div>
+</div>
+</div>
+
+</section>
+
+
+
+<section id="card-grid3">
+
+  <div id="card" data-aos="fade-right" data-aos-duration="3000">
+    <div id="card-content">
+ 
+      <div id="image-container">
+        <img src="https://media.istockphoto.com/id/1346124900/photo/confident-successful-mature-doctor-at-hospital.jpg?s=612x612&w=0&k=20&c=S93n5iTDVG3_kJ9euNNUKVl9pgXTOdVQcI_oDGG-QlE=" alt="Doctor" id="doctor-image">
+      </div>
+      
+    
+      <div id="booking-container" data-aos="fade-down" data-aos-duration="3000">
+        <h2 id="head">Book Your Appointment</h2>
+        <p>Select your preferred doctor and schedule your visit:</p>
+    </div>
+</div>
+</div>
+
+
+<div id="card"data-aos="fade-left" data-aos-duration="3000">
+<div id="card-content">
+
+  <div id="image-container">
+    <img src="https://img.freepik.com/free-photo/young-handsome-doctor-with-stethoscope-clinic_1303-19759.jpg?ga=GA1.1.362795349.1739713318&semt=ais_hybrid" alt="Doctor" id="doctor-image">
+  </div>
+  
+
+  <div id="booking-container" data-aos="fade-up" data-aos-duration="3000">
+    <h2 id="head">Book Your Appointment</h2>
+    <p>Select your preferred doctor and schedule your visit:</p>
+</div>
+</div>
+</div>
+
+</section>
+
+
+<!-- Doctor card -->
+
+<section id="doctor-cards">
+  <div class="doctor-card2" data-aos="fade-right" data-aos-duration="3000">
+    
+  </div>
+
+  <div class="doctor-card" data-aos="fade-left" data-aos-duration="3000">
+    <div class="doctor-card-content">
+      <div class="doctor-image-container">
+        <img src="https://media.istockphoto.com/id/1346124900/photo/confident-successful-mature-doctor-at-hospital.jpg?s=612x612&w=0&k=20&c=S93n5iTDVG3_kJ9euNNUKVl9pgXTOdVQcI_oDGG-QlE=" alt="Doctor" class="doctor-image">
+      </div>
+      <div class="doctor-info" data-aos="fade-down" data-aos-duration="3000">
+        <h3 class="doctor-name">Dr. Emily Clark</h3>
+        <p class="doctor-specialty">Pediatrician</p>
+        <p class="doctor-description">Dr. Clark specializes in children's health, providing compassionate care for young patients.</p>
+        <button class="book-appointment-btn">Book Appointment</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+  <script src="Sign_up.js"></script>
+  <script src="Home-swipper.js"></script>
+  <script src="card-scripted.js"></script>
+    <script>
+        AOS.init();
+      </script>
+
+</body>
+</html>
