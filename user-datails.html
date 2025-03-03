@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="user-datails.css">
+</head>
+<body>
+    <form>
+         <section>
+        <p id="ename"></p>
+        Name: <input type="text" id="iname" placeholder="Enter your name"> 
+        
+        <p id="ed"></p>
+        Consulting for: <select name="gender" id="id">
+            <option value="">Select</option>
+            <option value="eye test">Eye test</option>
+            <option value="Dengue">Dengue</option>
+            <option value="Cancer">Cancer</option>
+            <option value="Polio">Polio</option>
+            <option value="other">Other</option>
+        </select>
+
+        <p id="enum"></p>
+        Number: <input type="text" id="inum" placeholder="Enter your number"> 
+
+        <p id="edob"></p>
+        DOB: <input type="date" id="idob" value="">
+
+        <p id="edate"></p>
+        Date: <input type="date" id="idate" value="">
+
+        <div id="box">
+
+            <div id="time-container">
+        <p id="etime"></p>
+        Time: <input type="time" value="" id="itime">
+    </div>
+<div id="g">
+        <p id="egender"></p>
+        <div id="g"> Gender: <select name="gender" id="igender"> </div>
+        <option value="">Select</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+    </select> 
+</div>
+
+</div> 
+</section> <br> <br>
+    
+<div id="btn-container"><input type="submit" value="Book" id="but" onclick="return book()"></div>
+</div>
+    </form>
+   <script src="user_details.js"></script> 
+</body>
+</html>
