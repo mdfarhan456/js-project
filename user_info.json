@@ -1,34 +1,14 @@
 {
   "doctor": [
     {
-      "Name": "suraj",
+      "id": "9c75",
+      "Name": "Farhan",
       "Desease": "eye test",
       "Number": "7894264721",
-      "Dateofbirth": "2025-03-12",
-      "Date": "2025-03-21",
-      "Time": "18:00",
-      "Gender": "male",
-      "id": "43ec"
-    },
-    {
-      "Name": "Farhan",
-      "Desease": "Cancer",
-      "Number": "7894264721",
-      "Dateofbirth": "2025-03-19",
-      "Date": "2025-03-28",
-      "Time": "17:54",
-      "Gender": "male",
-      "id": "ff2d"
-    },
-    {
-      "Name": "fiazan",
-      "Desease": "male",
-      "Number": "7894264721",
-      "Dateofbirth": "2025-03-14",
-      "Date": "2025-03-29",
-      "Time": "22:46",
-      "Gender": "male",
-      "id": "836d"
+      "Dateofbirth": "2025-03-13",
+      "Date": "2025-03-27",
+      "Time": "23:46",
+      "Gender": "male"
     }
   ]
 }

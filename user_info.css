@@ -1,0 +1,101 @@
+body{
+    align-items: center;
+    justify-content: center;
+     height: 100vh;
+     display: flex;
+    background-image: url('https://img.freepik.com/free-photo/stethoscope-copy-space_23-2147652347.jpg');
+     font-family: Arial, Helvetica, sans-serifs;
+     background-repeat: no-repeat;
+     background-size: cover;
+   
+     
+    
+    }
+
+
+#up{
+    border-radius: 15px;
+    padding: 10px;
+    padding-right: 100px;
+    padding-left: 100px;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid rgb(68, 137, 222);
+    margin-left: 10px;
+    background-image: url('https://img.freepik.com/premium-vector/health-medical-science-healthcare-background-digital-technology-doctor_36402-400.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+input{
+    padding: 11px;
+   border-radius: 10px;
+ 
+    
+    border: none;
+ }
+ #upd{
+    padding: 10px;
+    border-radius: 10px;
+ 
+    
+    border: none;
+ }
+
+ #g{
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+   
+ }
+ #upgender{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    border-radius: 10px;
+    margin-right: 40px;
+ }
+
+#but{
+
+border-radius: 10px;
+padding: 10px;
+font-family: Georgia, 'Times New Roman', Times, serif;
+margin-top: 0px;
+background-color: rgb(68, 137, 222);
+font-size: medium;
+width: 200px;
+margin-bottom: 10px;
+margin-right: 20px;
+}
+#but:hover{
+background-color:  rgb(42, 96, 162);
+
+
+
+}
+#time-container{
+display: flex;
+flex-direction: column;
+
+
+}
+table{
+    box-shadow: 2px 2px 2px 2px;
+}
+
+#th{
+    background-color: rgb(34, 123, 182);
+  
+     font-size: larger;
+    
+
+}
+#show{
+    background-color: rgba(87, 182, 246, 0.771);
+    font-size: larger;
+  
+}

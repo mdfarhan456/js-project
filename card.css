@@ -232,3 +232,8 @@
 .book-appointment-btn:hover {
   background-color: #2980b9;
 }
+
+#head:hover{
+    cursor: pointer;
+    
+}

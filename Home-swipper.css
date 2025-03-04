@@ -44,4 +44,20 @@
     border-radius: 10px;
   }
   
+  .overlay-text2 {
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+
+  
 

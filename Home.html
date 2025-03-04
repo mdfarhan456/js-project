@@ -27,7 +27,7 @@
             </div>
             <ul class="nav-links" data-aos="fade-down" data-aos-duration="3000">
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Appointments</a></li>
+                <li><a href="user_info.html">Appointments</a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="#">Doctors</a></li>
                 <li><a href="#">About</a></li>
@@ -40,7 +40,7 @@
     <div class="swiper mySwiper" data-aos="fade-up" data-aos-duration="3000">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <div class="overlay-text" data-aos="fade-right" data-aos-duration="3000">Your Health, Our Priority</div>
+            <div class="overlay-text2"></div>
             <img src="https://img.freepik.com/free-photo/team-doctors-standing-row_107420-84772.jpg?t=st=1740326775~exp=1740330375~hmac=f81033e923bfa4175860b70a178a40d67657d4185708ddd0ec37d6a334a6c8a2&w=1380" alt=""></div>
           <div class="swiper-slide">
             <div class="overlay-text" data-aos="fade-right" data-aos-duration="3000">Book Your Doctor Anytime, Anywhere</div>
@@ -77,13 +77,13 @@
       <div id="card" data-aos="fade-right" data-aos-duration="3000">
         <div id="card-content">
      
-          <div id="image-container">
+          <div id="image-container" onclick="move()">
             <img src="https://media.istockphoto.com/id/1346124900/photo/confident-successful-mature-doctor-at-hospital.jpg?s=612x612&w=0&k=20&c=S93n5iTDVG3_kJ9euNNUKVl9pgXTOdVQcI_oDGG-QlE=" alt="Doctor" id="doctor-image">
           </div>
           
         
           <div id="booking-container" data-aos="fade-down" data-aos-duration="3000">
-            <h2 id="head">Book Your Appointment</h2>
+            <h2 id="head" onclick="move()">Book Your Appointment</h2>
             <p>Select your preferred doctor and schedule your visit:</p>
         </div>
     </div>
@@ -99,7 +99,7 @@
       
     
       <div id="booking-container" data-aos="fade-up" data-aos-duration="3000">
-        <h2 id="head">Book Your Appointment</h2>
+        <h2 id="head" onclick="move()">Book Your Appointment</h2>
         <p>Select your preferred doctor and schedule your visit:</p>
     </div>
 </div>
@@ -119,7 +119,7 @@
       
     
       <div id="booking-container" data-aos="fade-up" data-aos-duration="3000">
-        <h2 id="head">Book Your Appointment</h2>
+        <h2 id="head" onclick="move()">Book Your Appointment</h2>
         <p>Select your preferred doctor and schedule your visit:</p>
     </div>
 </div>
@@ -135,7 +135,7 @@
   
 
   <div id="booking-container" data-aos="fade-down" data-aos-duration="3000">
-    <h2 id="head">Book Your Appointment</h2>
+    <h2 id="head" onclick="move()">Book Your Appointment</h2>
     <p>Select your preferred doctor and schedule your visit:</p>
 </div>
 </div>
@@ -156,7 +156,7 @@
       
     
       <div id="booking-container" data-aos="fade-down" data-aos-duration="3000">
-        <h2 id="head">Book Your Appointment</h2>
+        <h2 id="head" onclick="move()">Book Your Appointment</h2>
         <p>Select your preferred doctor and schedule your visit:</p>
     </div>
 </div>
@@ -172,7 +172,7 @@
   
 
   <div id="booking-container" data-aos="fade-up" data-aos-duration="3000">
-    <h2 id="head">Book Your Appointment</h2>
+    <h2 id="head" onclick="move()">Book Your Appointment</h2>
     <p>Select your preferred doctor and schedule your visit:</p>
 </div>
 </div>
@@ -183,12 +183,12 @@
 
 <!-- Doctor card -->
 
-<section id="doctor-cards">
+<section id="doctor-cards" onclick="move()">
   <div class="doctor-card2" data-aos="fade-right" data-aos-duration="3000">
     
   </div>
 
-  <div class="doctor-card" data-aos="fade-left" data-aos-duration="3000">
+  <div class="doctor-card" data-aos="fade-left" data-aos-duration="3000" onclick="move()">
     <div class="doctor-card-content">
       <div class="doctor-image-container">
         <img src="https://media.istockphoto.com/id/1346124900/photo/confident-successful-mature-doctor-at-hospital.jpg?s=612x612&w=0&k=20&c=S93n5iTDVG3_kJ9euNNUKVl9pgXTOdVQcI_oDGG-QlE=" alt="Doctor" class="doctor-image">
@@ -205,7 +205,7 @@
 
 
 
-
+  
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

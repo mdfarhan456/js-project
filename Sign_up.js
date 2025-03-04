@@ -146,3 +146,8 @@ let log=()=>{
          logout.innerHTML="Logout"
     }
 }
+
+let move=()=>{
+    
+    location.href="user-datails.html"
+}

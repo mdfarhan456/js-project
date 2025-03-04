@@ -160,21 +160,23 @@ let del=async(id)=>{
 }
 
 let upd=async(id)=>{
-
+    
     let url=`http://localhost:3000/doctor/${id}`
     let response=await fetch(url,{method:"GET"})
 
     let data=await response.json()
     console.log(data)
 
+
+
     let formdata =`
            
-       <form>
+       <form id="up">
         Name: <input type="text" id="umname" value="${data.Name}" placeholder="Enter your name"> <br>
         
         
         Consulting for: <select name="Desease" id="upd"> 
-            <option value="${data.Gender}">Select</option>
+            <option value="${data.Desease}">Select</option>
             <option value="eye test">Eye test</option>
             <option value="Dengue">Dengue</option>
             <option value="Cancer">Cancer</option>
@@ -190,20 +192,21 @@ let upd=async(id)=>{
         
         Date: <input type="date" id="update" value="${data.Date}""> <br>
 
- 
+
 
             <div id="time-container">
     
         Time: <input type="time" value="${data.Time}" id="uptime"> <br>
 
 
-       
+       <div>
         <div id="g"> Gender: <select name="gender" id="upgender" > </div> 
         <option value="${data.Gender}">Select</option>
         <option value="male">Male</option>
         <option value="female">Female</option>
         <option value="other">Other</option>
     </select> 
+    
  <br> <br>
     
 <input type="submit" value="Update" id="but" onclick="return finalupdate('${data.id}')"></div>
@@ -212,7 +215,9 @@ let upd=async(id)=>{
  
         
     `
+//    location.href="update_form.html"
 document.querySelector("#data-container").innerHTML=formdata
+
 }
 
 
@@ -244,6 +249,21 @@ let finalupdate = (id) => {
             "Gender": inpgender
         })
     })
-
+    // location.href="user_info.html";
     return false;
 }
+
+
+
+
+var options = {
+    strings: ["Patient details", "Please fill following details."],
+    typeSpeed: 50,  // speed of typing
+    backSpeed: 25,  // speed of backspacing
+    backDelay: 1500,  // delay before backspacing
+    startDelay: 500,  // delay before typing starts
+    loop: true,  // repeat the animation
+    showCursor: false  // this will hide the cursor
+};
+
+var typed = new Typed("#sc", options);
