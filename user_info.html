@@ -4,9 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="user_info.css">
+    <link rel="stylesheet" href="Table.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body onload="fetchdata()">
+   
+    <div style="display: flex;" id="icon-container">
+        <div id="back">
+        <i class="fa-solid fa-arrow-left"  onclick="back()"></i>
+    </div>
+   
+    <i class="fa-solid fa-magnifying-glass" onclick="hide()" id="ic"></i>
+    <input type="text" id="searchinp" oninput="srch()" placeholder="Search">
+</div>
+
+   <h1>Patient Details Database</h1>
+
+
     
     <table border="1" cellspacing="10px" cellpadding="10px">
         <thead>
@@ -24,7 +38,7 @@
         </thead>
         <tbody id="show"></tbody>
     </table>
-
+<br>
     <div id="data-container"></div>
 <script src="user_details.js"></script>
 </body>

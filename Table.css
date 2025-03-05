@@ -1,8 +1,9 @@
 body{
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
      height: 100vh;
      display: flex;
+     flex-direction: column;
      /* flex-direction: column; */
     background-image: url('https://img.freepik.com/free-photo/stethoscope-copy-space_23-2147652347.jpg');
      font-family: Arial, Helvetica, sans-serifs;
@@ -86,6 +87,7 @@ flex-direction: column;
 }
 table{
     box-shadow: 2px 2px 2px 2px;
+   
 }
 
 #th{
@@ -99,4 +101,20 @@ table{
     background-color: rgba(87, 182, 246, 0.771);
     font-size: larger;
   
+}
+#searchinp{
+   display: none;
+   border-radius: none;
+}
+
+#ic{
+    margin-top: 10px;
+    margin-right: 5px;
+}
+#icon-container{
+   margin-right: 1000px;
+}
+#back{
+    margin-right: 250px;
+    margin-top: 10px;
 }

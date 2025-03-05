@@ -130,10 +130,31 @@ let fetchdata=async()=>{
     let response=await fetch(url,{method:"GET"})
 
     let data=await response.json()
+    datashow(data)
+}
+
+let srch=async()=>{
+    let searchinp=document.querySelector("#searchinp").value.toLowerCase()
+    let url='http://localhost:3000/doctor'
+        let res=await fetch(url,{method:"GET"})
+        let data = await res.json()
+    
+        let filterdata=data.filter((e)=>{
+    
+            return e.Name.toLowerCase().includes(searchinp)
+        })
+    
+        datashow(filterdata)
+    
+    }
+    
+    let datashow=(data)=>{
+        let show=document.querySelector("#show")
+        show.innerHTML=""
     
     data.map((e)=>{
 
-        let show=document.querySelector("#show")
+        
 
         show.innerHTML+=
         `
@@ -215,7 +236,7 @@ let upd=async(id)=>{
  
         
     `
-//    location.href="update_form.html"
+    // location.href="update_form.html"
 document.querySelector("#data-container").innerHTML=formdata
 
 }
@@ -253,6 +274,21 @@ let finalupdate = (id) => {
     return false;
 }
 
+let hide = () => {
+    let show = document.querySelector("#searchinp");
+
+    if (show.style.display === "none") {  
+        show.style.display = "block";
+        document.querySelector("#ic").style.display="none"
+    } else { 
+        show.style.display = "none";
+        document.querySelector("#ic").style.display="block"
+    }
+};
+
+let back=()=>{
+    location.href="user-datails.html"
+}
 
 
 
