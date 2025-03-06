@@ -130,7 +130,8 @@ let fetchdata=async()=>{
     let response=await fetch(url,{method:"GET"})
 
     let data=await response.json()
-    datashow(data)
+    // datashow(data)
+    pagination(data)
 }
 
 let srch=async()=>{
@@ -144,9 +145,26 @@ let srch=async()=>{
             return e.Name.toLowerCase().includes(searchinp)
         })
     
-        datashow(filterdata)
+        // datashow(filterdata)
+        pagination(filterdata)
     
     }
+
+    let pagination=(data)=>{
+        $('#pag').pagination({
+            dataSource: data,
+            pageSize: 5,
+            showGoInput: true,
+            showGoButton: true,
+            callback: function(data, pagination) {
+                // template method of yourself
+             
+       datashow(data)
+                
+            }
+        })
+    }
+    
     
     let datashow=(data)=>{
         let show=document.querySelector("#show")
@@ -166,19 +184,39 @@ let srch=async()=>{
             <td>${e.Date}<t/d>
             <td>${e.Time}<t/d>
             <td>${e.Gender}<t/d>
-            <td onclick="del('${e.id}')">Cancel<t/d>
+            <td onclick="confirmdelete('${e.id}')">Cancel<t/d>
             <td onclick="upd('${e.id}')">Update<t/d>
         </tr>
         `
 })
 
 }
-
-let del=async(id)=>{
+let confirmdelete=(id)=>{
+    Swal.fire({
+        title: "Are you sure?",
+        text: "You won't be able to revert this!",
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonColor: "#3085d6",
+        cancelButtonColor: "#d33",
+        confirmButtonText: "Yes, delete it!"
+      }).then((result) => {
+        if (result.isConfirmed) {
+            del(id);
+          Swal.fire({
+            title: "Deleted!",
+            text: "Your file has been deleted.",
+            icon: "success"
+          });
+        }
+      });
+}
+let del=(id)=>{
     let url=`http://localhost:3000/doctor/${id}`
 
-    let response=await fetch(url,{method:"DELETE"})
+     fetch(url,{method:"DELETE"})
 }
+
 
 let upd=async(id)=>{
     
@@ -286,9 +324,6 @@ let hide = () => {
     }
 };
 
-let back=()=>{
-    location.href="user-datails.html"
-}
 
 
 

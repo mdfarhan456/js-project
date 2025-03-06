@@ -139,10 +139,10 @@ let log=()=>{
 
     if(logout.innerHTML=="Logout"){
         localStorage.clear(sub)
-        logout.innerHTML="Signup"
+        logout.innerHTML="Login"
     }
-    else if( logout.innerHTML=="Signup"){
-        location.href="Sign_up.html"
+    else if( logout.innerHTML=="Login"){
+        location.href="Login.html"
          logout.innerHTML="Logout"
     }
 }
