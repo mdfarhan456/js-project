@@ -1,4 +1,4 @@
 let intro=()=>{
-
-    alert("Please Login first")
+    Swal.fire("Please Login first!");
 }
+sweet();
