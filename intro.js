@@ -1,3 +1,4 @@
 let intro=()=>{
-    location.href="Home.html"
+
+    alert("Please Login first")
 }

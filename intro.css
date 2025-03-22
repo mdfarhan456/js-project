@@ -2,6 +2,7 @@ body{
     background-image: url('https://plus.unsplash.com/premium_photo-1681843126728-04eab730febe?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bWVkaWNhbCUyMHRlYW18ZW58MHx8MHx8fDA%3D');
     background-repeat: no-repeat;
     background-size: cover;
+    min-height: 100vh;
     height: 100%;
     
 }
@@ -65,4 +66,49 @@ ul li:hover{
 #inp:hover{
     background-color:  rgb(42, 96, 162);
 }
-  
+   
+/*  Responsive Design */
+@media (max-width: 768px) {
+    ul {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    ul a {
+        font-size: 16px;
+    }
+
+    #content h1 {
+        font-size: 2.5rem;
+    }
+
+    #content p {
+        font-size: 1rem;
+    }
+
+    #inp {
+        padding: 10px 25px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #content h1 {
+        font-size: 2rem;
+    }
+
+    #content p {
+        font-size: 0.9rem;
+    }
+
+    #inp {
+        padding: 8px 20px;
+        font-size: 0.85rem;
+    }
+}

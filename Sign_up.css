@@ -84,3 +84,59 @@
      }
      
      
+/*  Responsive Design */
+
+
+@media (max-width: 768px) {
+    form {
+        padding: 20px;
+        max-width: 100%; 
+    }
+
+    #head {
+        font-size: 20px;
+    }
+
+    #form input {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    #but {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    #paral {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    form {
+        padding: 15px;
+        width: 100%; 
+    }
+
+    #head {
+        font-size: 18px;
+    }
+
+    #form input {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    #but {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    #paral {
+        font-size: 12px;
+    }
+}

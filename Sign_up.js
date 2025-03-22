@@ -142,7 +142,7 @@ let log=()=>{
         logout.innerHTML="Login"
     }
     else if( logout.innerHTML=="Login"){
-        location.href="Login.html"
+        location.href="Sign_up.html"
          logout.innerHTML="Logout"
     }
 }

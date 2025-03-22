@@ -1,16 +1,6 @@
 {
   "doctor": [
     {
-      "id": "9c75",
-      "Name": "Farhan",
-      "Desease": "eye test",
-      "Number": "7894264721",
-      "Dateofbirth": "2025-03-13",
-      "Date": "2025-03-27",
-      "Time": "23:46",
-      "Gender": "male"
-    },
-    {
       "Name": "roshni",
       "Desease": "other",
       "Number": "7894264721",
@@ -19,6 +9,36 @@
       "Time": "03:01",
       "Gender": "female",
       "id": "bcaf"
+    },
+    {
+      "id": "8532",
+      "Name": "ritika",
+      "Desease": "Dengue",
+      "Number": "8127170366",
+      "Dateofbirth": "2025-03-21",
+      "Date": "2025-03-17",
+      "Time": "20:38",
+      "Gender": "female"
+    },
+    {
+      "Name": "gauri",
+      "Desease": "Polio",
+      "Number": "7894264721",
+      "Dateofbirth": "2025-03-13",
+      "Date": "2025-03-27",
+      "Time": "20:50",
+      "Gender": "female",
+      "id": "16af"
+    },
+    {
+      "Name": "sal",
+      "Desease": "Dengue",
+      "Number": "7894264721",
+      "Dateofbirth": "2025-03-26",
+      "Date": "2025-03-26",
+      "Time": "15:55",
+      "Gender": "male",
+      "id": "da1e"
     }
   ]
 }

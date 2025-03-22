@@ -237,3 +237,63 @@
     cursor: pointer;
     
 }
+
+
+/* RESPONSIVENESS */
+
+/* Medium Devices (Tablets) */
+@media screen and (max-width: 768px) {
+  #card-grid,
+  #card-grid2,
+  #card-grid3,
+  #card-grid4 {
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
+
+  #card {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+  }
+
+  #image-container, #booking-container {
+      width: 100%;
+      padding: 10px;
+  }
+
+  .doctor-image {
+      width: 80px;
+      height: 80px;
+  }
+
+  h2 {
+      font-size: 18px;
+  }
+
+  p {
+      font-size: 14px;
+  }
+
+  .book-appointment-btn {
+      font-size: 14px;
+      padding: 8px 12px;
+  }
+}
+
+/* Small Devices (Mobile) */
+@media screen and (max-width: 480px) {
+  #card {
+      width: 100%;
+      margin-left: 0;
+  }
+
+  .doctor-image {
+      width: 70px;
+      height: 70px;
+  }
+
+  .book-appointment-btn {
+      padding: 8px 12px;
+      font-size: 14px;
+  }
+}
